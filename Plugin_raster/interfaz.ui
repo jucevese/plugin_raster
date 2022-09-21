@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>481</width>
-    <height>267</height>
+    <width>605</width>
+    <height>554</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>441</width>
-      <height>221</height>
+      <width>551</width>
+      <height>171</height>
      </rect>
     </property>
     <property name="font">
@@ -32,7 +32,7 @@
     <property name="title">
      <string>Datos de entrada</string>
     </property>
-    <widget class="QComboBox" name="comboBox">
+    <widget class="QComboBox" name="cmb1">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -61,7 +61,7 @@
       <string>Selecciona el archivo</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="btn1">
      <property name="geometry">
       <rect>
        <x>290</x>
@@ -79,8 +79,8 @@
       <rect>
        <x>10</x>
        <y>80</y>
-       <width>171</width>
-       <height>16</height>
+       <width>241</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -93,12 +93,12 @@
       <string>Sistema de referencia geoespacial</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_3">
+    <widget class="QLabel" name="lb1">
      <property name="geometry">
       <rect>
        <x>10</x>
        <y>110</y>
-       <width>31</width>
+       <width>141</width>
        <height>16</height>
       </rect>
      </property>
@@ -112,6 +112,55 @@
       <string>SRG</string>
      </property>
     </widget>
+   </widget>
+   <widget class="QPushButton" name="btn2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>520</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ayuda</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn3">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>520</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ejecutar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn4">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>520</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cerrar</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="txEdt">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>200</y>
+      <width>581</width>
+      <height>301</height>
+     </rect>
+    </property>
    </widget>
   </widget>
  </widget>
