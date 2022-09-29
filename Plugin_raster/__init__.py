@@ -1,32 +1,29 @@
 def name():
-    return 'Raster'
+    return "Raster"
 
 def author():
-    return 'Julio César Vences Serrato'
+    return "Héctor Solares Hernández"
 
 def authorName():
     return author()
 
 def email():
-    return 'jucevese@gmail.com'
+    return "solares.hec@gmail.com"
 
 def description():
-    return 'Raster'
+    return "raster"
 
 def about():
-    return 'Raster'
+    return "Raster"
 
 def version():
-    return '0.0.1'
+    return "0.0.1"
 
-def qgisMinimunVersion():
-    return '3.0'
+def qgisMinimumVersion():
+    return "3.0"
 
 def icon():
-    return 'icon.png'
-
-def category():
-    return 'Raster'
+    return "raster.png"
 
 def classFactory(iface):
     from .main import mainMenu

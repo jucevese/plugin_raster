@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>605</width>
-    <height>554</height>
+    <width>469</width>
+    <height>245</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,10 +17,10 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>20</x>
       <y>20</y>
-      <width>551</width>
-      <height>171</height>
+      <width>411</width>
+      <height>191</height>
      </rect>
     </property>
     <property name="font">
@@ -35,19 +35,25 @@
     <widget class="QComboBox" name="cmb1">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>50</y>
-       <width>271</width>
+       <width>221</width>
        <height>22</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
      </property>
     </widget>
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>30</y>
-       <width>111</width>
+       <width>221</width>
        <height>16</height>
       </rect>
      </property>
@@ -58,13 +64,13 @@
       </font>
      </property>
      <property name="text">
-      <string>Selecciona el archivo</string>
+      <string>Selecciona el archivo </string>
      </property>
     </widget>
     <widget class="QPushButton" name="btn1">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>250</x>
        <y>50</y>
        <width>41</width>
        <height>23</height>
@@ -77,10 +83,10 @@
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>80</y>
-       <width>241</width>
-       <height>21</height>
+       <x>20</x>
+       <y>90</y>
+       <width>221</width>
+       <height>16</height>
       </rect>
      </property>
      <property name="font">
@@ -96,9 +102,9 @@
     <widget class="QLabel" name="lb1">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>110</y>
-       <width>141</width>
+       <x>20</x>
+       <y>120</y>
+       <width>221</width>
        <height>16</height>
       </rect>
      </property>
@@ -112,55 +118,45 @@
       <string>SRG</string>
      </property>
     </widget>
-   </widget>
-   <widget class="QPushButton" name="btn2">
-    <property name="geometry">
-     <rect>
-      <x>150</x>
-      <y>520</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Ayuda</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn3">
-    <property name="geometry">
-     <rect>
-      <x>300</x>
-      <y>520</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Ejecutar</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn4">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>520</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Cerrar</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="txEdt">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>200</y>
-      <width>581</width>
-      <height>301</height>
-     </rect>
-    </property>
+    <widget class="QPushButton" name="btn2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Ayuda</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn3">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>150</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Empezar</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn4">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>150</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Cerrar</string>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>

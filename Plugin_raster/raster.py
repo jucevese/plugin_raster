@@ -1,4 +1,6 @@
+import imp
 import os
+from re import S
 import sys
 
 from PyQt5.QtCore import *
@@ -11,19 +13,25 @@ from qgis.utils import *
 
 from .interfaz import Ui_MainWindow
 
-class interfaz(QMainWindow):
+class interfaz (QMainWindow):
     def __init__(self):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-
+        
         self.ui.btn4.clicked.connect(self.cerrar)
+        self.ui.btn1.clicked.connect(self.abrirRaster)
+        self.ui.cmb1.currentIndexChanged.connect(self.selectRaster)
+    
+    @pyqtSlot()
+    def on_click(self):
+        print('ingresar codigo')
 
     def cerrar(self):
         self.close()
 
     def nombreCmb(self):
-        layers = QgsProject.instance().mapLayers().values() 
+        layers = QgsProject.instance().mapLayers().values()
         for layer in layers:
             if layer.type() == 0:
                 nomVLayer = layer.name()
@@ -31,3 +39,25 @@ class interfaz(QMainWindow):
             if layer.type() == 1:
                 nomRLayer = layer.name()
                 self.ui.lb1.setText(nomRLayer)
+    
+    @pyqtSlot()
+    def abrirRaster(self):
+        lypath, _ = QFileDialog.getOpenFileName(self, "Agrega un archivo raster (MDE)", "C:\\", "Raster (*.tif *.GRID)")
+        lyInfo = QFileInfo(lypath)
+        rlayer = QgsRasterLayer(lypath, lyInfo.fileName())
+        if not rlayer.isValid():
+            return
+        QgsProject.instance().addMapLayer(rlayer)
+        self.ui.cmb1.addItem("ingresar codigo")
+        self.ui.lb1.setText("ingresar codigo")
+    
+    def selectRaster(self):
+        Layertex = self.ui.cmb1.currentText()
+        layers = QgsProject.instance().mapLayers().values()
+        if self.ui.cmb1.currentIndex() >= 0:
+            for layer in layers:
+                if layer.name() == "ingresar codigo":
+                    self.ui.LineE2.setText("ingresar codigo")
+        else:
+            self.ui.lb1.setText("")
+            self.ui.lb1.setText("")
